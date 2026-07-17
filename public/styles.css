@@ -1,0 +1,142 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #1d2330;
+  --accent: #2f6fed;
+  --border: #d8def0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.subtle {
+  color: #5f6b85;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.answer-box {
+  min-height: 160px;
+  background: #f8faff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  overflow: auto;
+}
+
+.answer-box > :first-child {
+  margin-top: 0;
+}
+
+.answer-box h1,
+.answer-box h2,
+.answer-box h3 {
+  margin-top: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.answer-box p,
+.answer-box ul,
+.answer-box ol,
+.answer-box pre {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.answer-box ul,
+.answer-box ol {
+  padding-left: 1.4rem;
+}
+
+.answer-box code {
+  background: #eef3ff;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.answer-box pre {
+  background: #111827;
+  color: #f3f4f6;
+  border-radius: 10px;
+  padding: 12px;
+  overflow: auto;
+}
+
+.answer-box a {
+  color: var(--accent);
+}
+
+.status {
+  min-height: 22px;
+  margin-top: 10px;
+  color: #2b4b8d;
+}
+
+.answer-box .diagram-block {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.answer-box .diagram-block svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

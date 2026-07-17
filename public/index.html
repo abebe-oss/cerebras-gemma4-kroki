@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemma 4 Afaan Oromoo + Diagram UI</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <h1>Gemma 4 Afaan Oromoo UI</h1>
+        <p class="subtle">Ask a question and the response stays in Afaan Oromoo. Mermaid diagrams are rendered inline inside the answer itself.</p>
+
+        <form id="chat-form">
+          <label for="prompt">Question</label>
+          <textarea id="prompt" rows="6" placeholder="e.g., Biyyuma natti himi: software architecture akkaataa ..."></textarea>
+          <button type="submit">Send</button>
+        </form>
+
+        <div id="status" class="status" aria-live="polite"></div>
+      </section>
+
+      <section class="panel output-panel">
+        <h2>Response</h2>
+        <div id="answer" class="answer-box"></div>
+      </section>
+    </main>
+  </body>
+</html>
